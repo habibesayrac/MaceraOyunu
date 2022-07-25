@@ -56,7 +56,7 @@ public class ToolStore extends NormalLoc{
 
         System.out.println("Bir Silah Seçiniz: ");
         int selectWeaponID = input.nextInt();
-        while (selectWeaponID<1 || selectWeaponID >Weapon.weapons().length){
+        while (selectWeaponID<0 || selectWeaponID >Weapon.weapons().length){
             System.out.println("Geçersiz değer, tekrar giriniz: ");
             selectWeaponID = input.nextInt();
         }
